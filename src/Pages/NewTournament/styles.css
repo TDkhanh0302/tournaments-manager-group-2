@@ -1,0 +1,79 @@
+.wrap {
+  background-color: #252830;
+  padding-bottom: 100px;
+}
+.content{
+  margin-right: 0;
+}
+.head {
+  height: 270px;
+  align-items: center;
+  background-image: url('https://assets.challonge.com/assets/challonge_fireball_dark_blue.svg');
+  background-position: 100% 50%;
+  background-size: 50%;
+  display: flex;
+  background-repeat: repeat;
+  margin-bottom: 56px;
+}
+
+.head h2 {
+  color: #ffffff;
+  font-size: 42px;
+  font-weight: 300;
+  letter-spacing: 0.42px;
+  line-height: 46.2px;
+  margin-left: 15%;
+}
+
+.form_info {
+  background-color: #303542;
+  padding: 40px 40px;
+}
+
+.form_label {
+  color: #9098ae;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 34px;
+}
+
+.form-control {
+  background: #3a404e !important;
+  color: #fff !important;
+}
+
+.form-control:focus {
+  background: #3a404e;
+  border-color: #ff7324 !important;
+  outline-color: #ff7324 !important;
+  box-shadow: none;
+}
+
+.form_row + .form_row {
+  margin-top: 20px;
+}
+
+.form_btn {
+  line-height:2;
+  margin-top: 60px;
+  display: block;
+  margin-left: auto;
+  padding: 5px 15px;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #ff7324;
+  border-color: #ff7324;
+}
+
+.form_btn:hover {
+  color: #fff;
+  background-color: #cc4a00;
+  border-color: #a43b00;
+}
+.form-check-input:checked{
+  background-color: #ff7324;
+  border-color: #ff7324;
+}

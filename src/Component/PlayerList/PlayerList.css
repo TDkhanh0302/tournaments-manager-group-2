@@ -1,0 +1,14 @@
+.delete-btn{
+    width: 40px;
+    height: 40px;
+}
+.player-name{
+    line-height:40px;
+    background: #3a404e;
+    color: #D8D8D8;
+    width: 300px;
+}
+.edit-name-input{
+    color: #fff;
+}
+

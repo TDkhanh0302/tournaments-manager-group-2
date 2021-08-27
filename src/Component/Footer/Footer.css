@@ -1,0 +1,12 @@
+
+footer  a{
+    color: #ffffff80
+}
+Footer a:hover{
+    color: #fff
+}
+@media (max-width: 767px) {
+    #footer-logo{
+        width: 80%;
+    }
+}

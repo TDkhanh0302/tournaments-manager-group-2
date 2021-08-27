@@ -1,0 +1,4 @@
+.tournamentContent {
+    background-color: #272a33;
+    min-height: calc(100vh - 450px);
+}

@@ -1,0 +1,12 @@
+.add-player{
+    width: 300px;
+}
+.add-btn{
+    width: 60px;
+}
+
+@media (max-width: 367px){
+.add-btn {
+    margin-top: 10px;
+}
+}
