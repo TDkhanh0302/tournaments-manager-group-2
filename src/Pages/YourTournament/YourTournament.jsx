@@ -16,7 +16,7 @@ const YourTournament = () => {
           tournamentName={item.name}
           playersCount={item.player_count}
           gameName={item.game_name}
-          host = {item.user_id }
+          host={item.user_id}
         />
       );
     }
@@ -82,7 +82,7 @@ const YourTournament = () => {
           <div className="row text-center text-white p-3">
             <h2>MANAGE YOUR TOURNAMENTS</h2>
           </div>
-          <div className="row">{showListTournaments}</div>
+          <div className="row justify-content-between">{showListTournaments}</div>
         </div>
       </div>
 

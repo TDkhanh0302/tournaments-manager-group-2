@@ -1,36 +1,36 @@
-import React, { useContext, useEffect, useRef } from 'react'
-import { Link } from 'react-router-dom'
+import React, { useContext, useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import { TournamentsContext } from '../../contexts/TournamentsContext';
-import './TournamentBanner.css'
+import './TournamentBanner.css';
 const TournamentBannerBracketHost = (props) => {
-  const {tournamentId,currentTour}=props;
-  const {userLogged,getUserLogged} = useContext(TournamentsContext);
+  const { tournamentId, currentTour } = props;
+  const { userLogged, getUserLogged } = useContext(TournamentsContext);
   const settingRef = useRef(null);
 
-  const checkHost = () =>{
-    if (!userLogged|| currentTour.user_id !== userLogged.id)
-    {
+  const checkHost = () => {
+    if (!userLogged || currentTour?.user_id !== userLogged.id) {
       settingRef.current.classList.add('hidden');
-    }
-    else{
+    } else {
       settingRef.current.classList.remove('hidden');
     }
-  }
+  };
   useEffect(() => {
     getUserLogged();
     checkHost();
   }, []);
-  
+
   return (
     <div>
-      <img src="https://assets.challonge.com/assets/community_default_banners/default-cover-1-131d838501be46b4dc4ccf812fb3f7829fc8d2ff99d0e6dc60627288a696f341.svg" className="d-block w-100" alt="..." />
+      <img
+        src="https://assets.challonge.com/assets/community_default_banners/default-cover-1-131d838501be46b4dc4ccf812fb3f7829fc8d2ff99d0e6dc60627288a696f341.svg"
+        className="d-block w-100"
+        alt="..."
+      />
       <div className="container-fluid tournament-banner">
         <div className="container">
           <div className="row pt-3">
             <div className="col-8">
-              <h3>
-                {currentTour?.name}
-                </h3>
+              <h3>{currentTour?.name}</h3>
             </div>
           </div>
           <div className="row pt-3 pb-3Bracket">
@@ -56,19 +56,19 @@ const TournamentBannerBracketHost = (props) => {
           <div className="row">
             <ul className="nav nav-tabs">
               <li className="nav-item">
-                <Link className="nav-link active" to={"/tournament/bracket/" + tournamentId}>
+                <Link className="nav-link active" to={'/tournament/bracket/' + tournamentId}>
                   <i className="fas fa-stream m-1"></i>
                   Bracket
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to={"/tournament/players/" + tournamentId}>
+                <Link className="nav-link" to={'/tournament/players/' + tournamentId}>
                   <i className="far fa-user me-1"></i>
                   Player
                 </Link>
               </li>
               <li className="nav-item" ref={settingRef}>
-                <Link className="nav-link" to={"/tournament/setting/" + tournamentId}>
+                <Link className="nav-link" to={'/tournament/setting/' + tournamentId}>
                   <i className="fas fa-cogs me-1"></i>
                   Settings
                 </Link>
@@ -77,9 +77,7 @@ const TournamentBannerBracketHost = (props) => {
           </div>
         </div>
       </div>
-      <div className="abc">
-        
-      </div>
+      <div className="abc"></div>
     </div>
   );
 };

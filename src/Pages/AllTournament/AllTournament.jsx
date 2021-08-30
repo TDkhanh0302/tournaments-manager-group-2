@@ -77,7 +77,7 @@ const AllTournament = () => {
           <div className="row text-center text-white p-3">
             <h2>EXPLORE ALL TOURNAMENTS</h2>
           </div>
-          <div className="row">{showListTournaments}</div>
+          <div className="row justify-content-between">{showListTournaments}</div>
         </div>
       </div>
 
