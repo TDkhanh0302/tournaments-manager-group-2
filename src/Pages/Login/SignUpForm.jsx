@@ -46,6 +46,10 @@ const SignUpForm = () => {
         errUsernameRef.current.classList.add('invalid');
         usernameRef.current.focus();
         break;
+      } else if (passwordRef.current.value !== reInputPasswordRef.current.value) {
+        errPasswordRef.current.innerText = 'Mật khẩu không khớp';
+        errPasswordRef.current.classList.add('invalid');
+        break;
       } else {
         newUser.push({ id, password, username, tournament_id });
         writeDataTable(newUser, 'users');
