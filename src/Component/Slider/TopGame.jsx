@@ -13,7 +13,7 @@ function TopGame() {
   return (
     <div>
       <div className="top-game text-center p-5">
-        <h2 className="p-3">TOP GAMES</h2>
+        <h2 className="p-3">TOP GAMES demo dev</h2>
         <div className="container">
           <Slider {...settings}>
             <div className='slider-item'>
